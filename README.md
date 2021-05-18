@@ -1,4 +1,4 @@
 # webcalculator
 Penerapan Flexbox pada Web Calculator
 
-musshal.github.io/webcalculator
+https://musshal.github.io/webcalculator/

@@ -7,7 +7,7 @@ const calculator = {
 
 let updateDisplay = () => {
     document.querySelector("#displayNumber").innerText = calculator.displayNumber;
-}
+};
 
 const clearCalculator = () => {
     calculator.displayNumber = '0';
@@ -17,7 +17,11 @@ const clearCalculator = () => {
 };
 
 const inputDigit = (digit) => {
+    if (calculator.displayNumber === '0') {
+        calculator.displayNumber = digit;
+    } else {
     calculator.displayNumber += digit;
+    }
 };
 
 const buttons = document.querySelectorAll(".button");
